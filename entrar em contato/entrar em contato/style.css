@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #00a2e8;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    width: 400px;
+}
+
+.header {
+    background-color: #007bb5;
+    padding: 20px;
+}
+
+.header img {
+    max-width: 100%;
+    height: auto;
+}
+
+.content {
+    padding: 20px;
+    color: white;
+}
+
+.content h1 {
+    margin: 0 0 20px 0;
+    font-size: 24px;
+}
+
+.phone-number {
+    font-weight: bold;
+}
+
+.footer {
+    background-color: #007bb5;
+    padding: 10px;
+}
+
+.footer button {
+    background-color: #005b8f;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+.footer button:hover {
+    background-color: #004070;
+}

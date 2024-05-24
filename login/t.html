@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porto-X - Login</title>
+    <link rel="stylesheet" href="./o.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="logo">
+            <img src="./logo-porto-x.png" alt="logo projeto">
+        </div>
+        <h2>Faça seu Login</h2>
+        <form action="servicos.html">
+            <label for="cpf-email">CPF ou E-mail:</label>
+            <input type="text" id="cpf-email" name="cpf-email" required>
+            <label for="senha">Senha:</label>
+            <div class="password-container">
+                <input type="password" id="senha" name="senha" required>
+                <button type="button" class="show-password">
+                    <img src="eye-icon.png" alt="Mostrar senha">
+                </button>
+            </div>
+            <div class="options">
+                <a href="#">Esqueceu a senha?</a>
+                <a href="criar-conta.html">Faça seu cadastro:</a>
+            </div>
+            <button type="submit" class="continue-button">Continuar</button>
+        </form>
+    </div>
+    <script>
+        document.querySelector('.show-password').addEventListener('click', function() {
+            const senha = document.getElementById('senha');
+            if (senha.type === 'password') {
+                senha.type = 'text';
+            } else {
+                senha.type = 'password';
+            }
+        });
+    </script>
+</body>
+</html>
